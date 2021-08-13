@@ -12,7 +12,7 @@ class App extends Component{
   }
 
   getMovies = () => {
-    axios.get('http://localhost:5050/api/movies')
+    axios.get('/api/movies')
       .then(({data}) => this.setState({ data }))
       .catch(err => console.log(err))
   }
